@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Om Sai Tour and Travels | Cab Rental, Tour Packages & Pilgrim Trips</title>
+<meta name="description" content="Om Sai Tour and Travels: outstation cabs, airport transfers, Shirdi and pilgrimage packages, and holiday tours with trusted drivers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1B2A4A; --ink-soft:#4A5878; --marigold:#F5A524; --marigold-dark:#C47F0A;
+  --sky:#EAF1FB; --white:#fff; --line:#D8E0EE; --wa:#1FA855;
+  --head:'Bricolage Grotesque','Trebuchet MS',sans-serif;
+  --body:'Nunito Sans','Segoe UI',Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--white);line-height:1.6;font-size:17px}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);line-height:1.15;letter-spacing:-.01em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+h2{font-size:clamp(1.7rem,3.5vw,2.4rem);margin-bottom:10px}
+.lead{color:var(--ink-soft);max-width:60ch;margin-bottom:36px}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px}
+
+/* Header */
+header{position:sticky;top:0;z-index:20;background:var(--ink);color:#fff}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--head);font-weight:800;font-size:1.25rem;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo span{background:var(--marigold);color:var(--ink);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:1.1rem}
+nav ul{list-style:none;display:flex;gap:26px}
+nav a{text-decoration:none;font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--marigold)}
+.call{background:var(--marigold);color:var(--ink);padding:9px 18px;border-radius:999px;font-weight:700;text-decoration:none;font-size:.95rem}
+.menu-btn{display:none;background:none;border:2px solid #fff;color:#fff;border-radius:8px;padding:6px 12px;font:inherit;cursor:pointer}
+
+/* Hero */
+.hero{background:linear-gradient(180deg,var(--ink) 0%,#24396A 100%);color:#fff;padding:64px 0 88px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5.2vw,3.7rem);font-weight:800;margin-bottom:18px}
+.hero p{color:#D6DEF0;max-width:48ch;margin-bottom:26px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font:inherit;font-weight:700}
+.btn-main{background:var(--marigold);color:var(--ink)}
+.btn-main:hover{background:#FFB93D}
+.btn-ghost{border-color:#fff;color:#fff}
+.btn-ghost:hover{background:#ffffff22}
+.facts{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap;font-size:.95rem;color:#D6DEF0}
+.facts b{display:block;color:var(--marigold);font-family:var(--head);font-size:1.5rem}
+
+/* Booking card */
+.book{background:#fff;color:var(--ink);border-radius:16px;padding:26px;box-shadow:0 20px 50px #0004}
+.book h2{font-size:1.4rem;margin-bottom:16px}
+label{display:block;font-weight:700;font-size:.88rem;margin:12px 0 4px}
+input,select,textarea{width:100%;padding:11px 12px;border:1.5px solid var(--line);border-radius:8px;font:inherit;color:var(--ink);background:#fff}
+input:focus,select:focus,textarea:focus{border-color:var(--ink);outline:none}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.book .btn{width:100%;margin-top:18px;background:var(--wa);color:#fff}
+.book small{display:block;margin-top:10px;color:var(--ink-soft);font-size:.82rem}
+
+/* Services */
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.svc{padding:22px;border-left:4px solid var(--marigold);background:var(--sky);border-radius:0 12px 12px 0}
+.svc h3{font-size:1.1rem;margin-bottom:6px}
+.svc p{font-size:.94rem;color:var(--ink-soft)}
+
+/* Packages */
+.alt{background:var(--sky)}
+.packs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pack{background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
+.pack-top{height:130px;display:flex;align-items:flex-end;padding:16px;color:#fff;font-family:var(--head);font-size:1.35rem;font-weight:800}
+.p1{background:linear-gradient(135deg,#C47F0A,#F5A524)}
+.p2{background:linear-gradient(135deg,#1B2A4A,#3E5CA8)}
+.p3{background:linear-gradient(135deg,#0E7C66,#3FBF9B)}
+.p4{background:linear-gradient(135deg,#8A3B6E,#D2679F)}
+.p5{background:linear-gradient(135deg,#2F6FB5,#7CB6E8)}
+.p6{background:linear-gradient(135deg,#6B4A2B,#B58A5A)}
+.pack-body{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.pack ul{list-style:none;font-size:.94rem;color:var(--ink-soft)}
+.pack li{padding:3px 0}
+.pack li::before{content:"✓ ";color:var(--marigold-dark);font-weight:700}
+.pack-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.price{font-weight:700}
+.price small{display:block;font-weight:400;color:var(--ink-soft);font-size:.8rem}
+.pack .btn{padding:9px 16px;background:var(--ink);color:#fff;font-size:.9rem}
+
+/* Fleet */
+.fleet{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.car{border:1.5px solid var(--line);border-radius:12px;padding:20px}
+.car h3{font-size:1.1rem}
+.car p{font-size:.92rem;color:var(--ink-soft)}
+.car .seat{display:inline-block;margin-top:10px;background:var(--marigold);color:var(--ink);font-weight:700;font-size:.82rem;padding:3px 12px;border-radius:999px}
+
+/* Why */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.why div{border-top:3px solid var(--ink);padding-top:14px}
+.why h3{font-size:1.1rem;margin-bottom:6px}
+.why p{color:var(--ink-soft);font-size:.95rem}
+
+/* Reviews */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+blockquote{background:#fff;border-radius:12px;padding:22px;border:1px solid var(--line)}
+blockquote p{margin-bottom:12px}
+blockquote cite{font-style:normal;font-weight:700;font-size:.9rem;color:var(--ink-soft)}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact dl dt{font-weight:700;margin-top:16px}
+.contact dd{color:var(--ink-soft)}
+.contact form .btn{background:var(--ink);color:#fff;margin-top:16px}
+
+footer{background:var(--ink);color:#C5D0E8;padding:30px 0;font-size:.9rem}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:30;background:var(--wa);color:#fff;padding:13px 20px;border-radius:999px;font-weight:700;text-decoration:none;box-shadow:0 6px 20px #0004}
+
+@media (max-width:900px){
+  .hero-grid,.contact{grid-template-columns:1fr}
+  .services,.fleet{grid-template-columns:1fr 1fr}
+  .packs,.why,.reviews{grid-template-columns:1fr}
+  .menu-btn{display:block}
+  nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--ink);padding:14px 20px 20px}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:14px}
+  .call{display:none}
+}
+@media (max-width:520px){.services,.fleet,.row{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="logo"><span>ॐ</span> Om Sai Tour and Travels</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#packages">Tour packages</a></li>
+        <li><a href="#fleet">Vehicles</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="call" href="tel:+918217829604">Call +91 8217829604 </a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Travel with trusted drivers, from Bengaluru,airPort picup and drop,Local, Rental and OutStation avilable on 24/7</h1>
+      <p>Outstation cabs, airport transfers and group tours with clean vehicles, fixed prices and drivers who know the route.</p>
+      <div class="btns">
+        <a class="btn btn-main" href="#packages">See tour packages</a>
+        <a class="btn btn-ghost" href="#contact">Get a quote</a>
+      </div>
+      <div class="facts">
+        <div><b>10+ years</b>on the road</div>
+        <div><b>5,000+</b>trips completed</div>
+        <div><b>24 x 7</b>phone support</div>
+      </div>
+    </div>
+
+    <div class="book">
+      <h2>Book your cab</h2>
+      <form id="bookForm">
+        <label for="trip">Trip type</label>
+        <select id="trip">
+          <option>Outstation one way</option>
+          <option>Outstation round trip</option>
+          <option>Airport transfer</option>
+          <option>Local rental (8 hrs / 80 km)</option>
+          <option>Tour package</option>
+        </select>
+        <div class="row">
+          <div><label for="from">Pickup city</label><input id="from" required placeholder="e.g. Bengaluru"></div>
+          <div><label for="to">Drop city</label><input id="to" required placeholder="e.g. Mysure"></div>
+        </div>
+        <div class="row">
+          <div><label for="date">Date</label><input id="date" type="date" required></div>
+          <div><label for="cab">Vehicle</label>
+            <select id="cab"><option>Hatchback</option><option>Sedan</option><option>SUV (Ertiga)</option><option>Innova Crysta</option><option>Tempo Traveller</option></select>
+          </div>
+        </div>
+        <label for="name">Your name</label>
+        <input id="name" required placeholder="Full name">
+        <button class="btn" type="submit">Send enquiry on WhatsApp</button>
+        <small>Opens WhatsApp with your trip details filled in. We reply with the fare.</small>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">One team for your whole trip: the car, the driver and the plan.</p>
+    <div class="services">
+      <div class="svc"><h3>Outstation cabs</h3><p>One-way and round trips to any city, with transparent per-km pricing.</p></div>
+      <div class="svc"><h3>Airport transfers</h3><p>On-time pickup and drop, with flight tracking for arrivals.</p></div>
+      <div class="svc"><h3>Pilgrimage tours</h3><p>Nandi hills,Esha foundation,Mysure,Hampi, Tirupati and more, with darshan guidance.</p></div>
+      <div class="svc"><h3>Group and corporate</h3><p>Tempo Travellers and buses for families, offices, weddings and school trips.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="packages" class="alt">
+  <div class="wrap">
+    <h2>Popular tour packages</h2>
+    <p class="lead">Prices are starting rates for a sedan and change with season, group size and vehicle. Message us for an exact quote.</p>
+    <div class="packs">
+      <article class="pack"><div class="pack-top p1">Mysure</div><div class="pack-body">
+        <ul><li>2 days, 1 night</li><li>Pickup and drop included</li><li>Hotel near the temple on request</li></ul>
+        <div class="pack-foot"><div class="price">₹ 6,499<small>starting from</small></div><a class="btn" href="#contact" data-pack="Mysure Round Trip">Enquire</a></div></div></article>
+      <article class="pack"><div class="pack-top p2">Nandi Hills,Esha Foundation </div><div class="pack-body">
+        <ul><li>3 days, 2 nights</li><li>Trimbakeshwar and Panchavati</li><li>Local sightseeing included</li></ul>
+        <div class="pack-foot"><div class="price">₹ 5,999<small>starting from</small></div><a class="btn" href="#contact" data-pack="Nandi Hills,Esha Foundation">Enquire</a></div></div></article>
+      <article class="pack"><div class="pack-top p3">Goa Beach Holiday</div><div class="pack-body">
+        <ul><li>4 days, 3 nights</li><li>North and South Goa</li><li>Cab for sightseeing</li></ul>
+        <div class="pack-foot"><div class="price">₹ 14,999<small>starting from</small></div><a class="btn" href="#contact" data-pack="Goa Beach Holiday">Enquire</a></div></div></article>
+      <article class="pack"><div class="pack-top p4">Mahabaleshwar + Panchgani</div><div class="pack-body">
+        <ul><li>2 days, 1 night</li><li>Viewpoints and strawberry farms</li><li>Pickup from Pune or Mumbai</li></ul>
+        <div class="pack-foot"><div class="price">₹ 8,499<small>starting from</small></div><a class="btn" href="#contact" data-pack="Mahabaleshwar + Panchgani">Enquire</a></div></div></article>
+      <article class="pack"><div class="pack-top p5">Ajanta and Ellora Caves</div><div class="pack-body">
+        <ul><li>2 days, 1 night</li><li>Aurangabad base stay</li><li>Guide arranged on request</li></ul>
+        <div class="pack-foot"><div class="price">₹ 9,499<small>starting from</small></div><a class="btn" href="#contact" data-pack="Ajanta and Ellora Caves">Enquire</a></div></div></article>
+      <article class="pack"><div class="pack-top p6">Tirupati Balaji Yatra</div><div class="pack-body">
+        <ul><li>4 days, 3 nights</li><li>Darshan ticket assistance</li><li>Kanipakam and Srikalahasti</li></ul>
+        <div class="pack-foot"><div class="price">₹ 17,999<small>starting from</small></div><a class="btn" href="#contact" data-pack="Tirupati Balaji Yatra">Enquire</a></div></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="fleet">
+  <div class="wrap">
+    <h2>Our vehicles</h2>
+    <p class="lead">Every vehicle is serviced, cleaned before each trip and fully insured.</p>
+    <div class="fleet">
+      <div class="car"><h3>Hatchback</h3><p>Swift, WagonR or similar. Best for city rides and small trips.</p><span class="seat">4 seats</span></div>
+      <div class="car"><h3>Sedan</h3><p>Dzire, Etios or similar. Comfortable for couples and small families.</p><span class="seat">4 seats</span></div>
+      <div class="car"><h3>SUV / Innova</h3><p>Ertiga or Innova Crysta. Room for luggage on long highway trips.</p><span class="seat">6 to 7 seats</span></div>
+      <div class="car"><h3>Tempo Traveller</h3><p>Pushback seats and AC for groups, pilgrims and weddings.</p><span class="seat">12 to 17 seats</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Why travellers choose us</h2>
+    <p class="lead">Simple promises we keep on every trip.</p>
+    <div class="why">
+      <div><h3>Fixed, upfront fares</h3><p>You get the price before the trip. Tolls and parking are listed separately, so there are no surprises.</p></div>
+      <div><h3>Verified drivers</h3><p>Experienced, polite and police-verified, with local knowledge of routes and rest stops.</p></div>
+      <div><h3>Help when you need it</h3><p>Call or WhatsApp us any time, day or night, during your trip.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <h2>What customers say</h2>
+    <p class="lead">Replace these sample reviews with real ones from your customers.</p>
+    <div class="reviews">
+      <blockquote><p>Smooth Shirdi trip with our parents. The driver was patient and helped with darshan timings.</p><cite>Sample customer, Pune</cite></blockquote>
+      <blockquote><p>Clean Innova, on-time pickup and a fair price. We used them again for Goa.</p><cite>Sample customer, Mumbai</cite></blockquote>
+      <blockquote><p>Booked a Tempo Traveller for 14 relatives. Everything was arranged properly.</p><cite>Sample customer, Nashik</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="wrap contact"3E
+    <div>
+      <h2>Contact us</h2>
+      <p class="lead">Tell us where you want to go and we will reply with a quote.</p>
+      <dl>
+        <dt>Phone and WhatsApp</dt><dd><a href="tel:+918217829604">+91 8217829604</a></dd>
+        <dt>Email</dt><dd><a href="mailto:info@omsaitravels.example">info@omsaitravels.example</a></dd>
+        <dt>Office</dt><dd>Shop No. 1, Main Road, Your City, Maharashtra 000000</dd>
+        <dt>Hours</dt><dd>Open every day, 6 am to 10 pm. Phone support 24 x 7.</dd>
+      </dl>
+    </div>
+    <form id="contactForm">
+      <label for="cname">Name</label><input id="cname" required>
+      <label for="cphone">Phone number</label><input id="cphone" type="tel" required>
+      <label for="cmsg">Your trip details</label><textarea id="cmsg" rows="4" placeholder="Where, when, how many people?"></textarea>
+      <button class="btn" type="submit">Send on WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="yr"></span> Om Sai Tour and Travels. All rights reserved.</div>
+    <div>Cab rental · Tour packages · Pilgrim trips</div>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="#">WhatsApp us</a>
+
+<script>
+  // CHANGE THIS to your WhatsApp number: country code + number, no + or spaces
+  const WHATSAPP = "918217829604";
+
+  const wa = text => "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(text);
+  const $ = id => document.getElementById(id);
+
+  $("yr").textContent = new Date().getFullYear();
+  $("waFloat").href = wa("Hello Om Sai Tour and Travels, I would like to enquire about a trip.");
+  $("date").min = new Date().toISOString().split("T")[0];
+
+  $("menuBtn").addEventListener("click", e => {
+    const open = $("nav").classList.toggle("open");
+    e.target.setAttribute("aria-expanded", open);
+  });
+  $("nav").addEventListener("click", e => { if (e.target.tagName === "A") $("nav").classList.remove("open"); });
+
+  $("bookForm").addEventListener("submit", e => {
+    e.preventDefault();
+    const msg = "Hello Om Sai Tour and Travels,\n" +
+      "Name: " + $("name").value + "\n" +
+      "Trip: " + $("trip").value + "\n" +
+      "From: " + $("from").value + "\n" +
+      "To: " + $("to").value + "\n" +
+      "Date: " + $("date").value + "\n" +
+      "Vehicle: " + $("cab").value;
+    window.open(wa(msg), "_blank", "noopener");
+  });
+
+  $("contactForm").addEventListener("submit", e => {
+    e.preventDefault();
+    const msg = "Hello Om Sai Tour and Travels,\nName: " + $("cname").value +
+      "\nPhone: " + $("cphone").value + "\n" + $("cmsg").value;
+    window.open(wa(msg), "_blank", "noopener");
+  });
+
+  // "Enquire" buttons on packages pre-fill the contact message
+  document.querySelectorAll("[data-pack]").forEach(b => {
+    b.addEventListener("click", () => {
+      $("cmsg").value = "I am interested in the " + b.dataset.pack + " package. Please share the price and dates.";
+    });
+  });
+</script>
+</body>
+</html>
